@@ -11,7 +11,6 @@ export class DetailOrderService {
             where: {
                 order_id
             },
-            //retorna os dados do produto e do order
             include:{
                 product: true,
                 order: true

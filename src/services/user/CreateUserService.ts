@@ -9,7 +9,6 @@ interface UserRequest {
 
 export class CreateUserService {
 	async execute({ name, email, password }: UserRequest) {
-		//validar dados
 		if (!email) {
 			throw new Error("Email missing");
 		}
@@ -27,13 +26,11 @@ export class CreateUserService {
         const passwordHash = await hash(password, 8)
 
 		const user = await _prismaClient.user.create({
-            //informações do create
 			data: {
 				name,
 				email,
 				password: passwordHash,
 			},
-            //seleciona oq vc deseja devolver (return)
             select: {
                 id: true,
                 name: true,

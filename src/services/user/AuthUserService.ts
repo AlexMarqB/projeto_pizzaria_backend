@@ -9,7 +9,6 @@ interface AuthRequest {
 
 export class AuthUserService {
     async execute({email, password}: AuthRequest) {
-        //verificar se o email exite
 
         const user = await _prismaClient.user.findFirst({
             where: {
@@ -27,7 +26,6 @@ export class AuthUserService {
             throw new Error("Email/Password incorrect")
         }
 
-        //gerar token JWT e devolver os dados do user
         const token = sign(
             {
                 name: user.name,
