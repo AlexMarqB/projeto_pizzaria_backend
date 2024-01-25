@@ -6,8 +6,8 @@ export class ListCategoryController {
 
         const listCategoryService = new ListCategoryService()
 
-        const category = await listCategoryService.execute()
+        const categories = await listCategoryService.execute()
 
-        return res.json(category)
+        return res.json(categories)
     }
 }

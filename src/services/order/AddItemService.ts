@@ -7,7 +7,7 @@ interface ItemRequest {
 }
 
 export class AddItemService {
-    async execute({order_id, product_id, amount,}: ItemRequest) {
+    async execute({order_id, product_id, amount}: ItemRequest) {
 
         const item = await _prismaClient.item.create({
             data: {

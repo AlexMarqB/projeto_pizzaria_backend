@@ -10,12 +10,13 @@ export class CreateOrderService {
 
         const orderExists = await _prismaClient.order.findFirst({
             where: {
-                table
+                table,
+                draft: true
             }
         })
 
         if(orderExists) {
-            throw new Error(`Order for table ${table} already exists`)
+            throw new Error(`Order for table ${table} ir already open, send one first`)
         }
 
         const order = await _prismaClient.order.create({

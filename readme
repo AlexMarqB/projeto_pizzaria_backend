@@ -1,0 +1,15 @@
+Funcionalidades Pizzaria == 
+
+[✅] - Cadastrar um novo usuario
+[✅] - Logar um usuario
+[✅] - Verificar autenticação para rotas privadas - JWT
+[✅] - Mostrar detalhes do usuario logado - /me
+[✅] - Criar e listar categorias
+[✅] - Criar produtos e listar produtos de uma categoria especifica
+[✅] - Abrir uma mesa/pedido (order) e poder fechar ela 
+[✅] - Adicionar items (produtos) a um pedido e poder remove-los
+[✅] - Enviar pedido (order) retirando de rascunho (draft) adicionando valores na conta (bill)
+[✅] - Listar todos os pedidos que não estão em rascunho (draft)
+[✅] - Poder acessar todos os detalhes de uma mesa com os pedidos dela
+[✅] - Concluir/finalizar pedido
+[✅] - Listar pedidos finalizados por mesa (table)

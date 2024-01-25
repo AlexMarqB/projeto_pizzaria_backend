@@ -6,8 +6,6 @@ export class DetailUserController {
 
         const {user_id} = req
 
-        console.log(user_id)
-
         const detailUserService = new DetailUserService()
 
         const user = await detailUserService.execute(user_id)
