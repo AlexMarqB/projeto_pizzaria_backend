@@ -16,3 +16,19 @@ Funcionalidades Pizzaria ==
 [✅] - Poder acessar todos os detalhes de uma mesa com os pedidos dela
 [✅] - Concluir/finalizar pedido
 [✅] - Listar pedidos finalizados por mesa (table)
+
+Functionality for Pizzeria ==
+
+[✅] - Register a new user
+[✅] - Log in a user
+[✅] - Verify authentication for private routes - JWT
+[✅] - Show details of the logged-in user - /me
+[✅] - Create and list categories
+[✅] - Create products and list products from a specific category
+[✅] - Open a table/order and be able to close it
+[✅] - Add items (products) to an order and be able to remove them
+[✅] - Submit an order, removing it from draft and adding amounts to the bill
+[✅] - List all orders that are not in draft
+[✅] - Access all details of a table with its orders
+[✅] - Complete/finish an order
+[✅] - List completed orders by table
