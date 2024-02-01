@@ -39,12 +39,10 @@ export class AuthUserService {
         )
 
         return {
-            data: {
-                id: user.id,
+            id: user.id,
                 name: user.name,
-                email: user.email
-            },
-            token: token
+                email: user.email,
+                token: token
         }
     }
 }
