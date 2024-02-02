@@ -1,5 +1,0 @@
-controller são as funções chamadas diretamente pela rota 
-
-pegam os dados diretamente da requisição trata os dados depois envia para o service
-
-eles chamam um serviço

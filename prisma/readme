@@ -1,2 +1,0 @@
-criar/atualizar migration -> 
-npx prisma migrate dev --name 
