@@ -38,9 +38,7 @@ export class SendOrderService {
             },
             data: {
                 draft: false,
-                bill: {
-                    increment: itemsValue
-                }
+                bill: itemsValue
             }
         });
 
